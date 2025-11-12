@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Money FinPay</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F9FAFB;
+      color: #1E1E1E;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: linear-gradient(135deg, #5E17EB, #4F46E5);
+      color: white;
+    }
+
+    nav h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00C9A7;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 20px;
+      color: #5E17EB;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      text-align: left;
+      font-weight: 500;
+    }
+
+    input {
+      padding: 12px;
+      border: 1.5px solid #ddd;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #5E17EB, #4F46E5);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background: #1E1E1E;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>FinPay</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Send Money Instantly 💸</h2>
+
+    <form>
+      <label>Receiver Name:</label>
+      <input type="text" placeholder="Enter receiver's name" required>
+
+      <label>Account Number:</label>
+      <input type="number" placeholder="Enter account number" required>
+
+      <label>Amount (₹):</label>
+      <input type="number" placeholder="Enter amount" required>
+
+      <label>Message (optional):</label>
+      <input type="text" placeholder="e.g. Thanks for lunch!">
+
+      <button type="submit">Send Money</button>
+    </form>
+  </div>
+</body>
+</html>
